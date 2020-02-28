@@ -1,0 +1,2 @@
+{{ $js := path.Join "js" . | resources.Get | resources.Minify | resources.Fingerprint -}}
+<script src="{{ $js.Permalink }}"></script>

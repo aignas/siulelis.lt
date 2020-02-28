@@ -9,22 +9,12 @@
         <title>{{ .Site.Params.name }} | {{ .Title }}</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        {{ $style_main := resources.Get "sass/gallery.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-        {{ $style_ie9 := resources.Get "sass/ie9.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-        {{ $fav := resources.Get "img/favicon.png" | resources.Fingerprint }}
-        <link rel="stylesheet" href="{{ $style_main.Permalink }}">
-        <!--[if lte IE 9]><link rel="stylesheet" href="{{ $style_ie9.Permalink }}" /><![endif]-->
-        <link rel="shortcut icon" type="image/png" href="{{ $fav.Permalink }}"/>
-
-        <!-- Scripts -->
-        {{ $js_query := resources.Get "js/jquery.min.js" | resources.Minify | resources.Fingerprint }}
-        {{ $js_pop := resources.Get "js/jquery.poptrox.js" | resources.Minify | resources.Fingerprint }}
-        {{ $js_skel := resources.Get "js/skel.min.js" | resources.Minify | resources.Fingerprint }}
-        {{ $js_util := resources.Get "js/util.js" | resources.Minify | resources.Fingerprint }}
-        {{ $js_gal := resources.Get "js/gallery.js" | resources.Minify | resources.Fingerprint }}
-        <script src="{{ $js_query.Permalink }}"></script>
-        <script src="{{ $js_pop.Permalink }}"></script>
-        <script src="{{ $js_skel.Permalink }}"></script>
-        <script src="{{ $js_util.Permalink }}"></script>
-        <script src="{{ $js_gal.Permalink }}"></script>
+        {{ partial "sass" "gallery.scss" }}
+        <!--[if lte IE 9]>{{ partial "sass" "ie9.scss" }}<![endif]-->
+        {{ partial "fav" . }}
+        {{ partial "js" "jquery.min.js" }}
+        {{ partial "js" "jquery.poptrox.js" }}
+        {{ partial "js" "skel.min.js" }}
+        {{ partial "js" "util.js" }}
+        {{ partial "js" "gallery.js" }}
     </head>
