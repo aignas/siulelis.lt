@@ -3,6 +3,9 @@ ARGS?=--source ./hugo
 init:
 	echo "Setting up git hooks"
 	git config core.hooksPath .githooks
+	git lfs install
+	netlify plugins:install netlify-lm-plugin
+	netlify lm:setup
 
 .PHONY: check
 check: build
