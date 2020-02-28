@@ -6,4 +6,4 @@ command = "make build"
 HUGO_VERSION = "0.64.1"
 
 [context.deploy-preview]
-command = "make ARGS="--source ./hugo --baseUrl $DEPLOY_PRIME_URL" build
+command = "make ARGS=\"--source ./hugo --baseUrl $DEPLOY_PRIME_URL\" build"
