@@ -1,9 +1,5 @@
 {{ "<!-- Scripts -->" | safeHTML }}
-{{ $js := resources.Get "js/jquery.min.js" | resources.Minify | resources.Fingerprint }}
-<script src="{{ $js.Permalink }}"></script>
-{{ $js = resources.Get "js/skel.min.js" | resources.Minify | resources.Fingerprint }}
-<script src="{{ $js.Permalink }}"></script>
-{{ $js = resources.Get "js/util.js" | resources.Minify | resources.Fingerprint }}
-<script src="{{ $js.Permalink }}"></script>
-{{ $js = resources.Get "js/main.js" | resources.Minify | resources.Fingerprint }}
-<script src="{{ $js.Permalink }}"></script>
+{{ partial "js" "jquery.min.js" }}
+{{ partial "js" "skel.min.js" }}
+{{ partial "js" "util.js" }}
+{{ partial "js" "main.js" }}

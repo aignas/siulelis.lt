@@ -1,0 +1,2 @@
+{{ $fav := path.Join "img" "favicon.png" | resources.Get | resources.Fingerprint -}}
+<link rel="shortcut icon" type="image/png" href="{{ $fav.Permalink }}"/>
