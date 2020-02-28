@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<!--
+    Phantom by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>{{ .Site.Params.Name }} | {{ .Site.Params.Description }}</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="{{ .Site.Params.MetaDescription }}" />
+        {{ $js := resources.Get "js/ie/html5shiv.js" | resources.Minify | resources.Fingerprint }}
+        <!--[if lte IE 8]><script src="{{ $js.Permalink }}"></script><![endif]-->
+        {{ $style_main := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+        {{ $style_ie9 := resources.Get "sass/ie9.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+        {{ $fav := resources.Get "img/favicon.png" | resources.Fingerprint }}
+        <link rel="stylesheet" href="{{ $style_main.Permalink }}">
+        <!--[if lte IE 9]><link rel="stylesheet" href="{{ $style_ie9.Permalink }}" /><![endif]-->
+        <link rel="shortcut icon" type="image/png" href="{{ $fav.Permalink }}"/>
+    </head>

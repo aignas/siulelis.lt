@@ -1,0 +1,45 @@
+<ul class="icons">
+    {{ with .Site.Params.contact.twitter }}
+    <li>
+        <a href="https://twitter.com/{{ . }}"
+            class="icon">
+            <i class="icon style2 fa-twitter"></i>
+            <span class="label">
+                Twitter
+            </span>
+        </a>
+    </li>
+    {{ end }}
+    <li>
+        <a href="https://facebook.com/{{ .Site.Params.contact.facebook }}"
+            class="icon">
+            <i class="icon style2 fa-facebook"></i>
+            <span class="label">
+                Facebook
+            </span>
+            {{ .Site.Params.contact.facebook_message }}
+        </a>
+    </li>
+    {{ with .Site.Params.contact.phone }}
+    <li>
+        <a href="tel:{{ . }}"
+            class="icon">
+            <i class="icon style2 fa-phone"></i>
+            <span class="label">
+                Phone
+            </span>
+            {{ . }}
+        </a>
+    </li>
+    {{ end }}
+    <li>
+        <a href="https://goo.gl/maps/{{ .Site.Params.contact.googlemaps }}"
+            class="icon">
+            <i class="icon style2 fa-map-marker"></i>
+            <span class="icon label">
+                Google Maps
+            </span>
+            {{ delimit .Site.Params.contact.address ", " }}
+        </a>
+    </li>
+</ul>

@@ -1,0 +1,10 @@
+{{ partial "gallery/head" . }}
+    <body>
+        <div id="wrapper">
+            {{ partial "gallery/header" . }}
+            {{ "<!-- Main -->" | safeHTML }}
+            {{ partial "gallery/images" . }}
+            {{ partial "gallery/footer" . }}
+        </div>
+    </body>
+</html>

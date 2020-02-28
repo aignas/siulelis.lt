@@ -1,0 +1,18 @@
+<!-- Footer -->
+    <footer id="footer" class="panel">
+        <div class="inner split">
+            <section>
+                {{ partial "contact_buttons" . }}
+            </section>
+            <section>
+                {{ partial "contact_us" . }}
+            </section>
+            <p class="copyright">
+                {{ with .Site.Params.footer.copyright }}
+                {{ . | markdownify }}
+                {{ end }}
+            </p>
+        </div>
+    </footer>
+
+</div>
