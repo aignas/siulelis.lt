@@ -1,0 +1,21 @@
+#wrapper .notfound > #main .notfound {
+    padding: 0em 0 0em 0 ;
+
+    @media screen and (max-width: 736px) {
+        padding: 0em 0 0em 0 ;
+    }
+}
+
+#main .notfound img {
+    width: 16em;
+    max-width: 70%;
+    max-height: 70%;
+}
+
+#main .notfound h1 {
+    font-size: 3em;
+}
+
+#wrapper > * > .notfound {
+    text-align: center;
+}
