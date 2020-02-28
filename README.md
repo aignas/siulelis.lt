@@ -1,6 +1,6 @@
 # Siulelis.lt
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/fa7a4d71-a132-4cd0-8b64-86e19532f709/deploy-status)](https://app.netlify.com/sites/dreamy-lalande-0680e2/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b7c186bf-078d-4237-b6aa-2d868f1a5495/deploy-status)](https://app.netlify.com/sites/stupefied-kalam-e85212/deploys)
 
 A small photo-gallery single pager, which I built for my family.
 
