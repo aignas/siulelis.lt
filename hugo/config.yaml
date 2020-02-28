@@ -1,0 +1,105 @@
+---
+baseurl: https://siulelis.lt/
+languageCode: lt
+title: 'Siulelis: Užuolaidų siuvykla'
+MetaDataFormat: yaml
+# theme = "hugo-phantom-multiverse-theme"
+
+params:
+  # To provide some metadata for search engines feel free to add a few
+  # information about you and your website.
+  Name: Siūlelis
+  Description: Užuolaidų siuvykla
+  MetaDescription: "
+    Mūsų užuolaidų siuvykloje modeliuojame, siuvame ir taisome
+        dienines ir naktines užuolaidas,
+        romanetes, austrijietes,
+        lambrekenus,
+        širmas,
+        pagalvėles,
+        lovatieses,
+        staltieses,
+        užvalkalus ir kita."
+
+  # Enable Google Analytics by inserting your tracking code
+  GoogleAnalytics: "UA-39997669-1"
+
+  notfound:
+    explanation: Toks puslapis nerastas
+
+  about:
+    title: Sveiki atvykę!
+    menu: Pradžia
+    content: >
+        Esame maži, bet turime didelį 20 metų patirties lagaminą, kurio turiniu
+        nekantraujame pasidalinti su Jumis. Vertiname kiekvieną klientą, todėl skiriame
+        daug dėmesio Jūsų pageidavimams ir siuvimo kokybei. Mūsų kainos nesikandžioja,
+        o konsultacijas rūpimais užuolaidų dizaino klausimais su didžiausiu malonumu
+        teikiame nemokamai. Kreipkitės, ir mes su džiaugsmu Jums patarsime, padėsime
+        išsirinkti tinkamus audinius, karnizus bei aksesuarus iš siuvykloje esančių
+        pavyzdžių. Jeigu medžiagą jau turite – užsakymą be vargo pasiūsime iš jos.
+
+        Mūsų užuolaidų siuvykla – tai vieta, kur susitinka daugiametė patirtis ir
+        naujos idėjos. Maloniai kviečiame apsilankyti!
+
+  portfolio:
+    title: Mūsų darbai
+    menu: Mūsų darbai
+    content: >
+        Mūsų užuolaidų siuvykloje modeliuojame, siuvame ir taisome:
+
+        * dienines ir naktines užuolaidas
+        * romanetes, austrijietes
+        * lambrekenus
+        * širmas
+        * pagalvėles
+        * lovatieses
+        * staltieses
+        * užvalkalus ir kita.
+
+        Padedame išsirinkti užuolaidų modelį, suderinti audinius, traukimo juosteles,
+        karnizus, konstrukcijas, kitus priedus, taip pat teisingai išsimatuoti langus.
+
+  contact:
+    title: Susisiekite
+    menu: Susisiekite
+    content: Su mumis galite susisiekti telefonu, elektroniniu paštu.
+
+    address:
+      - Vytenio g. 6
+      - 03113
+      - Vilnius
+    phone: "+37065542778"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+    email: info@siulelis.lt
+    email_cc: beata.koniuchova@gmail.com
+
+    # The icons will be shown if you enter your username
+    # twitter: siulelis
+    facebook: Uzuolaidu.siuvykla.Siulelis
+    facebook_message: Siūlelis Facebook
+    googleplus: SiulelisLT
+    googlemaps: hHGGxUhT8mP2
+
+    form:
+      # Set custom strings for the form if your native
+      # language isn't English
+      title: Arba parašykite mums dabar
+      name: Jūsų vardas
+      email: Jūsų el. paštas
+      message: Žinutė
+      submit: Siųsti
+
+  footer:
+    copyright: '&copy; Ignas Anikevičius | Design: [HTML5 UP](//html5up.net)'
