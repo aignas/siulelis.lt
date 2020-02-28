@@ -1,0 +1,5 @@
+<!-- Logo -->
+<a href="{{ .Site.BaseURL }}" class="logo">
+    {{ $logo := resources.Get "img/logo.svg" | resources.Fingerprint }}
+    <span class="title"><img src="{{ $logo.Permalink }}" alt="{{ .Site.Params.name }}: {{ .Site.Params.description }}" id="logo" />
+</a>

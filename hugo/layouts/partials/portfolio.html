@@ -1,0 +1,23 @@
+{{ "<!-- portfolio -->" | safeHTML }}
+<div class="inner">
+    <!-- {{ with .Site.Params.portfolio.content }}<p>{{ . | markdownify }}</p>{{ end }} -->
+
+    {{ with .Site.Params.portfolio.title }}<a name="gallery"><h2>{{ . }}</h2></a>{{ end }}
+
+    <section class="tiles">
+        {{ range .Site.RegularPages }}
+        <article class="style1">
+            <span class="image">
+                {{ with path.Join "img" "gallery" (path.Base .File.Dir) .Params.cover | resources.Get }}
+                {{ $thumb := .Fill "640x640" }}<img src="{{ $thumb.Permalink }}" alt="" />{{ end }}
+            </span>
+            <a href="{{ .Permalink }}">
+                <h2>{{ .Title }}</h2>
+                <div class="content">
+                    <p>{{ .Content }}</p>
+                </div>
+            </a>
+        </article>
+        {{ end }}
+    </section>
+</div>
