@@ -26,7 +26,7 @@ gc:
 
 .PHONY: hugo
 hugo:
-	hugo $(ARGS) --destination ./public
+	hugo $(ARGS) --destination ./public --minify
 
 .PHONY: serve
 serve: assets
