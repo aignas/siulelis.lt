@@ -17,12 +17,7 @@ assets:
 	cp logos/logo.svg hugo/assets/img/logo.svg
 
 .PHONY: build
-build: assets hugo gc
-
-.PHONY: gc
-gc:
-	@echo "Garbage collecting"
-	@hugo $(ARGS) --gc
+build: assets hugo
 
 .PHONY: hugo
 hugo:
