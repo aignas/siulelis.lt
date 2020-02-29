@@ -10,7 +10,7 @@
               {{ if $.Site.IsServer -}}
               {{ $thumb := .Fill "640x640" }}<img src="{{ $thumb.Permalink }}" alt="" />
               {{ else -}}
-              <img src="{{ .RelPermalink }}?nf_resize=smartcrop&w=640&h=640" alt="" />
+              <img src="{{ .Permalink }}?nf_resize=smartcrop&w=640&h=640" alt="" />
               {{ end -}}
               {{ end -}}
             </span>
