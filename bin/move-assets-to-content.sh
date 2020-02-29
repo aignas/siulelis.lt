@@ -2,8 +2,8 @@
 set -euo pipefail
 
 readonly git_root=$(git rev-parse --show-toplevel)
-readonly path_c="$git_root/hugo/content/galerija"
-readonly path_a="$git_root/hugo/assets/img/gallery"
+readonly path_c="hugo/content/galerija"
+readonly path_a="hugo/assets/img/gallery"
 
 die() {
     echo "$@"
@@ -18,26 +18,33 @@ _done() {
 
 to_content() {
     echo "moving images to content..."
-    for folder in "${path_a}"/*; do
+    for folder in "${git_root}/${path_a}"/*; do
         name="$(basename "$folder")"
-        content="${path_c}/$name"
+        content="${git_root}/${path_c}/$name"
         [[ -d "$content" ]] || die "did not find content dir in content/galerija"
         echo -n "$name "
         git mv "$folder"/*.jpg "$content"/
     done
     _done
+    change_git_attributes "${path_a}" "${path_c}"
 }
 
 to_assets() {
     echo "moving images back to assets..."
-    for folder in "${path_c}"/*; do
+    for folder in "${git_root}/${path_c}"/*; do
         name="$(basename "$folder")"
-        assets="${path_a}/$name"
+        assets="${git_root}/${path_a}/$name"
         mkdir -p "$assets"
         echo -n "$name "
         git mv "$folder"/*.jpg "$assets"/
     done
     _done
+    change_git_attributes "${path_c}" "${path_a}"
+}
+
+change_git_attributes() {
+    echo "changing git attributes for LFS to track $2"
+    sed -i "s|$1|$2|" "${git_root}/.gitattributes"
 }
 
 main() {
