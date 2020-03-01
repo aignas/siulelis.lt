@@ -21,7 +21,7 @@ build: assets hugo
 
 .PHONY: hugo
 hugo:
-	hugo $(ARGS) --destination ./public --minify
+	hugo $(ARGS) --destination ./public
 
 .PHONY: serve
 serve: assets
