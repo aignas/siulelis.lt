@@ -7,6 +7,7 @@ A small photo-gallery single pager, which I built for my family.
 Dependencies:
 - hugo
 - netlify CLI
+- netlify LFS
 - git-lfs
 
 ## Bootstrapping the environment

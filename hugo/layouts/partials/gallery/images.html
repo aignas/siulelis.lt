@@ -7,9 +7,9 @@
         {{ if $.Site.IsServer -}}
         {{ $full := .Resize "1280x" -}}
         {{ $thumb := .Fill "640x640" -}}
-        <a href="{{ $full.Permalink }}" class="image"><img src="{{ $thumb.Permalink }}" alt="" /></a>
+        <a href="{{ $full.RelPermalink }}" class="image"><img src="{{ $thumb.RelPermalink }}" alt="" /></a>
         {{ else -}}
-        <a href="{{ .Permalink }}?nf_resize=fit&h=1280" class="image"><img src="{{ .Permalink }}?nf_resize=smartcrop&w=640&h=640" alt="" /></a>
+        <a href="{{ .RelPermalink }}?nf_resize=fit&h=1280" class="image"><img src="{{ .RelPermalink }}?nf_resize=smartcrop&w=640&h=640" alt="" /></a>
         {{ end -}}
         {{ else -}}{{ errorf "%q file was not found" .img }}{{ end -}}
         <h2>{{ index . "title" | default "" }}</h2>
