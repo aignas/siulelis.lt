@@ -1,8 +1,14 @@
 <nav id="menu">
-    <h2>Menu</h2>
-    <ul>
-        <li><a href="{{ .Site.BaseURL }}">{{ .Site.Params.about.menu }}</a></li>
-        <li><a href="{{ .Site.BaseURL }}#gallery">{{ .Site.Params.portfolio.menu }}</a></li>
-        <li><a href="{{ .Site.BaseURL }}#contact">{{ .Site.Params.contact.menu }}</a></li>
-    </ul>
+  <h2>Menu</h2>
+  <ul>
+    <li><a href="{{ .Site.BaseURL }}">{{ .Site.Params.about.menu }}</a></li>
+    <li>
+      <a href="{{ .Site.BaseURL }}#gallery"
+        >{{ .Site.Params.portfolio.menu }}</a
+      >
+    </li>
+    <li>
+      <a href="{{ .Site.BaseURL }}#contact">{{ .Site.Params.contact.menu }}</a>
+    </li>
+  </ul>
 </nav>

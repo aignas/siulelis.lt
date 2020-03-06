@@ -1,17 +1,19 @@
-{{ "<!-- Footer -->" | safeHTML }}
 <footer id="footer">
-    <div class="inner">
-        <section>
-            {{ with .Site.Params.contact.title }}<a name="contact"><h2>{{ . }}</h2></a>{{ end }}
-        </section>
-    </div>
-    <div class="inner">
-        <section>
-            {{ partial "contact_buttons" . }}
-        </section>
-        <section>
-            {{ partial "contact_us" . }}
-        </section>
-        <ul class="copyright">{{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ end }}</ul>
-    </div>
+  <div class="inner">
+    <section>
+      {{ with .Site.Params.contact.title }}<a name="contact"><h2>{{ . }}</h2></a
+      >{{ end }}
+    </section>
+  </div>
+  <div class="inner">
+    <section>
+      {{ partial "contact_buttons" . }}
+    </section>
+    <section>
+      {{ partial "contact_us" . }}
+    </section>
+    <ul class="copyright">
+      {{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ end }}
+    </ul>
+  </div>
 </footer>
