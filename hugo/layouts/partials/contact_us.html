@@ -1,26 +1,26 @@
-{{ with .Site.Params.contact.email }}
+{{ with .Site.Params.contact.email -}}
 <form action="https://formspree.io/{{ . }}" method="post">
-{{ end }}
-    <div class="field half first">
-        {{ with .Site.Params.contact.form.name }}
-        <input type="text" name="name" id="name" placeholder="{{ . }}" />
-        {{ end }}
-    </div>
-    <div class="field half">
-        {{ with .Site.Params.contact.form.email }}
-        <input type="email" name="_replyto" id="email" placeholder="{{ . }}" />
-        {{ end }}
-        <input type="text" name="_gotcha" style="display:none" />
-        <input type="hidden" name="_subject" value="Nauja užklausa!" />
-    </div>
-    <div class="field">
-        {{ with .Site.Params.contact.form.message }}
-        <textarea name="body" id="message" placeholder="{{ . }}"></textarea>
-        {{ end }}
-    </div>
-    <ul class="actions">
-        {{ with .Site.Params.contact.form.submit }}
-        <li><input type="submit" value="{{ . }}" class="special" /></li>
-        {{ end }}
-    </ul>
+  {{ end -}}
+  <div class="field half first">
+    {{ with .Site.Params.contact.form.name -}}
+    <input type="text" name="name" id="name" placeholder="{{ . }}" />
+    {{ end -}}
+  </div>
+  <div class="field half">
+    {{ with .Site.Params.contact.form.email -}}
+    <input type="email" name="_replyto" id="email" placeholder="{{ . }}" />
+    {{ end -}}
+    <input type="text" name="_gotcha" style="display:none" />
+    <input type="hidden" name="_subject" value="Nauja užklausa!" />
+  </div>
+  <div class="field">
+    {{ with .Site.Params.contact.form.message -}}
+    <textarea name="body" id="message" placeholder="{{ . }}"></textarea>
+    {{ end -}}
+  </div>
+  <ul class="actions">
+    {{ with .Site.Params.contact.form.submit -}}
+    <li><input type="submit" value="{{ . }}" class="special" /></li>
+    {{ end -}}
+  </ul>
 </form>

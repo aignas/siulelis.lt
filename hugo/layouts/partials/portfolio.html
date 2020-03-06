@@ -1,24 +1,30 @@
 {{ "<!-- portfolio -->" | safeHTML }}
 <div class="inner">
-    <!-- {{ with .Site.Params.portfolio.content }}<p>{{ . | markdownify }}</p>{{ end }} -->
-    {{ with .Site.Params.portfolio.title }}<a name="gallery"><h2>{{ . }}</h2></a>{{ end -}}
-    <section class="tiles">
-        {{ range .Site.RegularPages -}}
-        <article class="style1">
-            <span class="image">
-              {{ with .Resources.GetMatch .Params.cover -}}
-              {{ if $.Site.IsServer -}}
-              {{ $thumb := .Fill "640x640" }}<img src="{{ $thumb.RelPermalink }}" alt="" />
-              {{ else -}}
-              <img src="{{ .RelPermalink }}?nf_resize=smartcrop&w=640&h=640" alt="" />
-              {{ end -}}
-              {{ end -}}
-            </span>
-            <a href="{{ .Permalink }}">
-                <h2>{{ .Title }}</h2>
-                <div class="content"><p>{{ .Content }}</p></div>
-            </a>
-        </article>
+  <!-- {{ with .Site.Params.portfolio.content }}<p>{{ . | markdownify }}</p>{{ end }} -->
+  {{ with .Site.Params.portfolio.title }}<a name="gallery"><h2>{{ . }}</h2></a
+  >{{ end -}}
+  <section class="tiles">
+    {{ range .Site.RegularPages -}}
+    <article class="style1">
+      <span class="image">
+        {{ with .Resources.GetMatch .Params.cover -}}
+        <img
+        {{ if $.Site.IsServer -}}
+          {{ $thumb := .Fill "640x640" }}
+          data-src="{{ $thumb.RelPermalink }}"
+        {{ else -}}
+          data-src="{{ .RelPermalink }}?nf_resize=smartcrop&w=640&h=640"
         {{ end -}}
-    </section>
+          alt=""
+          class="lazyload"
+        />
+        {{ end -}}
+      </span>
+      <a href="{{ .Permalink }}">
+        <h2>{{ .Title }}</h2>
+        <div class="content"><p>{{ .Content }}</p></div>
+      </a>
+    </article>
+    {{ end -}}
+  </section>
 </div>

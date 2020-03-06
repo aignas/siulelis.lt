@@ -1,8 +1,12 @@
 <div class="inner">
-    <section id="one">
-        <header class="major">
-            {{ with .Site.Params.about.title }}<h2>{{ . | markdownify }}</h2>{{ end }}
-        </header>
-        {{ with .Site.Params.about.content }}<p>{{ . | markdownify }}</p>{{ end }}
-    </section>
+  <section id="one">
+    <header class="major">
+      {{ with .Site.Params.about.title }}
+      <h2>{{ . | markdownify }}</h2>
+      {{ end }}
+    </header>
+    {{ with .Site.Params.about.content }}
+    <p>{{ . | markdownify }}</p>
+    {{ end }}
+  </section>
 </div>
