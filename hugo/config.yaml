@@ -21,9 +21,6 @@ params:
         staltieses,
         užvalkalus ir kita."
 
-  # Enable Google Analytics by inserting your tracking code
-  GoogleAnalytics: "UA-39997669-1"
-
   notfound:
     explanation: Toks puslapis nerastas
 
