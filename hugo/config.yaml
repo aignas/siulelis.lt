@@ -80,7 +80,6 @@ params:
     # - click the confirm link in the email from www.formspree.io
     # - you're done. Happy mailing!
     email: info@siulelis.lt
-    email_message: Arba parašykite mums dabar
 
     # The icons will be shown if you enter your username
     # twitter: siulelis
