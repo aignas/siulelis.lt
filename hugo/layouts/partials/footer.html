@@ -9,9 +9,6 @@
     <section>
       {{ partial "contact_buttons" . }}
     </section>
-    <section>
-      {{ partial "contact_us" . }}
-    </section>
     <ul class="copyright">
       {{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ end }}
     </ul>
