@@ -80,13 +80,12 @@ params:
     # - click the confirm link in the email from www.formspree.io
     # - you're done. Happy mailing!
     email: info@siulelis.lt
-    email_cc: beata.koniuchova@gmail.com
+    email_message: Arba parašykite mums dabar
 
     # The icons will be shown if you enter your username
     # twitter: siulelis
     facebook: Uzuolaidu.siuvykla.Siulelis
     facebook_message: Siūlelis Facebook
-    googleplus: SiulelisLT
     googlemaps: hHGGxUhT8mP2
 
     form:

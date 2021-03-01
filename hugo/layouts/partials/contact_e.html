@@ -1,0 +1,36 @@
+<ul class="icons">
+  {{ with .Site.Params.contact.twitter }}
+  <li>
+    <a href="https://twitter.com/{{ . }}" class="icon">
+      <i class="icon style2 fa-twitter"></i>
+      <span class="label">
+        Twitter
+      </span>
+    </a>
+  </li>
+  {{ end }}
+  <li>
+    <a
+      href="https://facebook.com/{{ .Site.Params.contact.facebook }}"
+      class="icon"
+    >
+      <i class="icon style2 fa-facebook"></i>
+      <span class="label">
+        Facebook
+      </span>
+      {{ .Site.Params.contact.facebook_message }}
+    </a>
+  </li>
+  <li>
+    <a
+      href="mailto://{{ .Site.Params.contact.mail }}"
+      class="icon"
+    >
+      <i class="icon style2 fa-envelope"></i>
+      <span class="label">
+        Email
+      </span>
+      {{ .Site.Params.contact.email_message }}
+    </a>
+  </li>
+</ul>
