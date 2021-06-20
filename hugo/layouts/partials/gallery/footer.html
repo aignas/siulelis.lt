@@ -1,14 +1,16 @@
 <!-- Footer -->
 <footer id="footer" class="panel">
-  <div class="inner split">
+  <div class="inner">
     <section>
-      {{ partial "contact_buttons" . }}
+      {{ partial "contact_e" . }}
     </section>
     <section>
-      {{ partial "contact_us" . }}
+      {{ partial "contact_old" . }}
     </section>
-    <p class="copyright">
-      {{ with .Site.Params.footer.copyright }} {{ . | markdownify }} {{ end }}
-    </p>
+    <section>
+      <ul class="copyright">
+        {{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ end }}
+      </ul>
+    </section>
   </div>
 </footer>
