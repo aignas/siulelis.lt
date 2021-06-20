@@ -22,7 +22,7 @@ params:
         užvalkalus ir kita."
 
   notfound:
-    explanation: Toks puslapis nerastas
+    explanation: Deja, toks puslapis nerastas
 
   about:
     title: Sveiki atvykę!
