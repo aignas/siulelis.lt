@@ -111,10 +111,6 @@ section {
   display: block;
 }
 
-body {
-  line-height: 1;
-}
-
 ol,
 ul {
   list-style: none;
@@ -1612,7 +1608,7 @@ body.loading #header {
   color: #a0a0a1;
   display: inline-block;
   font-size: 1em;
-  line-height: 1;
+  line-height: inherit;
   margin: 0;
   vertical-align: middle;
 }
