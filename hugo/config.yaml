@@ -1,7 +1,7 @@
 ---
 baseurl: https://siulelis.lt/
 languageCode: lt
-title: 'Siulelis: Užuolaidų siuvykla'
+title: 'Siulelis: Užuolaidų studija'
 MetaDataFormat: yaml
 # theme = "hugo-phantom-multiverse-theme"
 
@@ -9,9 +9,9 @@ params:
   # To provide some metadata for search engines feel free to add a few
   # information about you and your website.
   Name: Siūlelis
-  Description: Užuolaidų siuvykla
+  Description: Užuolaidų studija
   MetaDescription: "
-    Mūsų užuolaidų siuvykloje modeliuojame, siuvame ir taisome
+    Mūsų užuolaidų studijoje modeliuojame, siuvame ir taisome
         dienines ir naktines užuolaidas,
         romanetes, austrijietes,
         lambrekenus,
@@ -32,17 +32,17 @@ params:
         nekantraujame pasidalinti su Jumis. Vertiname kiekvieną klientą, todėl skiriame
         daug dėmesio Jūsų pageidavimams ir siuvimo kokybei. Kreipkitės, ir mes
         su džiaugsmu Jums patarsime rūpimais užuolaidų dizaino klausimais, padėsime
-        išsirinkti tinkamus audinius, karnizus bei aksesuarus iš siuvykloje esančių
+        išsirinkti tinkamus audinius, karnizus bei aksesuarus iš studijoje esančių
         pavyzdžių. Jeigu medžiagą jau turite – užsakymą be vargo pasiūsime iš jos.
 
-        Mūsų užuolaidų siuvykla – tai vieta, kur susitinka daugiametė patirtis ir
+        Mūsų užuolaidų studija – tai vieta, kur susitinka daugiametė patirtis ir
         naujos idėjos. Maloniai kviečiame apsilankyti!
 
   portfolio:
     title: Mūsų darbai
     menu: Mūsų darbai
     content: >
-        Mūsų užuolaidų siuvykloje modeliuojame, siuvame ir taisome:
+        Mūsų užuolaidų studijoje modeliuojame, siuvame ir taisome:
 
         * dienines ir naktines užuolaidas
         * romanetes, austrijietes
@@ -82,7 +82,7 @@ params:
 
     # The icons will be shown if you enter your username
     # twitter: siulelis
-    facebook: Uzuolaidu.siuvykla.Siulelis
+    facebook: Uzuolaidu.studija.Siulelis
     facebook_message: Siūlelis Facebook
     googlemaps: hHGGxUhT8mP2
 
