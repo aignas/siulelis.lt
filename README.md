@@ -15,8 +15,3 @@ Dependencies:
 ```
 $ make init
 ```
-
-## Colors
-
-- Light black: `#585858ff`
-- Green: `#70bcadff`
