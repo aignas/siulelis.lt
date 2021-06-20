@@ -2,9 +2,10 @@
 <footer id="footer" class="panel">
   <div class="inner split">
     <section>
-      {{ partial "contact_buttons" . }}
+      {{ partial "contact_e" . }}
     </section>
     <section>
+      {{ partial "contact_old" . }}
     </section>
     <p class="copyright">
       {{ with .Site.Params.footer.copyright }} {{ . | markdownify }} {{ end }}
